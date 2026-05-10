@@ -14,6 +14,10 @@
     us-co:regulations/10-ccr-2506-1/4.407.31#input.household_pays_cooking_fuel_utility_cost: false
     us-co:regulations/10-ccr-2506-1/4.407.31#input.household_pays_telephone_service_cost: false
   output:
+    us-co:regulations/10-ccr-2506-1/4.407.31#colorado_snap_heating_cooling_utility_allowance_amount: 594
+    us-co:regulations/10-ccr-2506-1/4.407.31#colorado_snap_basic_utility_allowance_amount: 377
+    us-co:regulations/10-ccr-2506-1/4.407.31#colorado_snap_one_utility_allowance_amount: 71
+    us-co:regulations/10-ccr-2506-1/4.407.31#colorado_snap_telephone_utility_allowance_amount: 97
     us-co:regulations/10-ccr-2506-1/4.407.31#snap_heating_cooling_utility_allowance_eligible: not_holds
     us-co:regulations/10-ccr-2506-1/4.407.31#snap_non_heating_cooling_utility_expense_count: 0
     us-co:regulations/10-ccr-2506-1/4.407.31#snap_standard_utility_allowance: 0

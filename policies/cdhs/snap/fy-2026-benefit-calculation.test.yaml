@@ -169,12 +169,16 @@
     us-co:regulations/10-ccr-2506-1/4.207.2#input.migrant_or_seasonal_farmworker_household_in_job_stream: false
     us-co:regulations/10-ccr-2506-1/4.207.2#input.break_in_participation_days: 0
   output:
+    us-co:policies/cdhs/snap/fy-2026-benefit-calculation#max_allotment_for_number_of_boarders: 0
     us-co:regulations/10-ccr-2506-1/4.403#snap_countable_earned_income: 1000
     us-co:regulations/10-ccr-2506-1/4.404#snap_countable_unearned_income: 0
     us:regulations/7-cfr/273/10#snap_gross_monthly_income: 1000
     us:regulations/7-cfr/273/10#snap_monthly_household_income: 1000
+    us-co:policies/cdhs/snap/fy-2026-benefit-calculation#other_countable_self_employment_earned_income: 0
+    us-co:policies/cdhs/snap/fy-2026-benefit-calculation#total_household_resources_before_exclusions: 0
     us-co:regulations/10-ccr-2506-1/4.401#snap_income_eligible: holds
     us:regulations/7-cfr/273/8#snap_resource_eligible: holds
+    us-co:policies/cdhs/snap/fy-2026-benefit-calculation#snap_student_eligible: holds
     us-co:policies/cdhs/snap/fy-2026-benefit-calculation#snap_ssn_eligible: holds
     us-co:policies/cdhs/snap/fy-2026-benefit-calculation#snap_work_requirement_eligible: holds
     us-co:policies/cdhs/snap/fy-2026-benefit-calculation#snap_residency_citizenship_eligible: holds

@@ -27,6 +27,15 @@
     us-co:regulations/10-ccr-2506-1/4.403#input.snap_vista_income_exclusion: 400
   output:
     us-co:regulations/10-ccr-2506-1/4.403#snap_countable_vista_earned_income: 200
+- name: government_training_allowance_counts_when_not_reimbursement_or_wioa
+  period: 2026-01
+  input:
+    us-co:regulations/10-ccr-2506-1/4.403#input.vocational_rehabilitation_training_allowance_from_government_program: true
+    us-co:regulations/10-ccr-2506-1/4.403#input.training_allowance_is_reimbursement: false
+    us-co:regulations/10-ccr-2506-1/4.403#input.training_allowance_paid_under_wioa: false
+    us-co:regulations/10-ccr-2506-1/4.403#input.training_allowance_amount: 450
+  output:
+    us-co:regulations/10-ccr-2506-1/4.403#snap_countable_training_allowance_earned_income: 450
 - name: wioa_on_the_job_training_counts_for_adult_participant
   period: 2026-01
   input:
@@ -50,6 +59,13 @@
     us-co:regulations/10-ccr-2506-1/4.403#input.non_striking_household_members_current_income: 900
   output:
     us-co:regulations/10-ccr-2506-1/4.403#snap_striker_income_for_eligibility: 2100
+- name: sick_vacation_or_bonus_pay_counts_while_still_employed
+  period: 2026-01
+  input:
+    us-co:regulations/10-ccr-2506-1/4.403#input.person_still_employed_when_sick_vacation_or_bonus_pay_received: true
+    us-co:regulations/10-ccr-2506-1/4.403#input.sick_vacation_or_bonus_pay_received: 325
+  output:
+    us-co:regulations/10-ccr-2506-1/4.403#snap_sick_vacation_bonus_earned_income: 325
 - name: rental_income_is_earned_when_actively_managed
   period: 2026-01
   input:
@@ -67,7 +83,14 @@
     us-co:regulations/10-ccr-2506-1/4.403#input.llc_s_corporation_business_income: 5000
     us-co:regulations/10-ccr-2506-1/4.403#input.llc_s_corporation_business_expenses: 3500
   output:
+    us-co:regulations/10-ccr-2506-1/4.403#snap_llc_s_corporation_owner_draw_earned_income: 1500
     us-co:regulations/10-ccr-2506-1/4.403#snap_llc_s_corporation_owner_earned_income: 2500
+- name: capital_goods_sale_connected_to_self_employment_counts
+  period: 2026-01
+  input:
+    us-co:regulations/10-ccr-2506-1/4.403#input.capital_goods_services_or_property_sale_proceeds_connected_to_self_employment: 1200
+  output:
+    us-co:regulations/10-ccr-2506-1/4.403#snap_capital_goods_sale_self_employment_income: 1200
 - name: earned_income_aggregates_countable_components
   period: 2026-01
   input:

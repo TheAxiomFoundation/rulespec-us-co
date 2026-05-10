@@ -26,6 +26,13 @@
     us-co:regulations/10-ccr-2506-1/4.207.2#snap_initial_month_prorated_allotment: 153
     us:regulations/7-cfr/273/10#snap_initial_month_allotment_after_minimum_issuance: 153
     us-co:regulations/10-ccr-2506-1/4.207.2#snap_allotment: 153
+- name: first_day_application_has_full_proration_factor
+  period: 2026-01
+  input:
+    us-co:regulations/10-ccr-2506-1/4.207.2#input.application_date: '2026-01-01'
+    us-co:regulations/10-ccr-2506-1/4.207.2#input.public_institution_joint_ssi_snap_application_before_release: false
+  output:
+    us-co:regulations/10-ccr-2506-1/4.207.2#snap_initial_month_proration_factor: 1
 - name: initial_month_uses_public_institution_release_date
   period: 2026-01
   input:

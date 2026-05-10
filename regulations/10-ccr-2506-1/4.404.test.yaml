@@ -14,6 +14,13 @@
     us-co:regulations/10-ccr-2506-1/4.404#input.rental_property_business_costs: 300
   output:
     us-co:regulations/10-ccr-2506-1/4.404#snap_countable_rental_unearned_income: 0
+- name: sponsored_noncitizen_deemed_income_counts_as_unearned
+  period: 2026-01
+  input:
+    us-co:regulations/10-ccr-2506-1/4.404#input.sponsored_noncitizen_household: true
+    us-co:regulations/10-ccr-2506-1/4.404#input.sponsor_income_deemed_to_household: 625
+  output:
+    us-co:regulations/10-ccr-2506-1/4.404#snap_countable_sponsor_unearned_income: 625
 - name: terminated_employment_installments_count_and_lump_sum_is_resource
   period: 2026-01
   input:
@@ -40,6 +47,13 @@
     us-co:regulations/10-ccr-2506-1/4.404#input.household_member_allocated_lottery_or_gambling_winnings: 2000
   output:
     us-co:regulations/10-ccr-2506-1/4.404#snap_countable_lottery_gambling_winnings: 2000
+- name: trust_withdrawals_and_available_dividends_count
+  period: 2026-01
+  input:
+    us-co:regulations/10-ccr-2506-1/4.404#input.trust_fund_withdrawals: 240
+    us-co:regulations/10-ccr-2506-1/4.404#input.available_trust_dividends: 60
+  output:
+    us-co:regulations/10-ccr-2506-1/4.404#snap_countable_trust_income: 300
 - name: unearned_income_aggregates_countable_categories
   period: 2026-01
   input:

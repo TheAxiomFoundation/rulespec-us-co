@@ -164,5 +164,7 @@
     us-co:regulations/10-ccr-2506-1/4.410#input.federal_income_tax_refund_resource_value: 1500
     us-co:regulations/10-ccr-2506-1/4.410#input.total_household_resources_before_exclusions: 25000
   output:
+    us-co:regulations/10-ccr-2506-1/4.410#snap_household_member_use_resource_exemption: 1200
+    us-co:regulations/10-ccr-2506-1/4.410#snap_specific_purpose_government_payment_resource_exemption: 1300
     us-co:regulations/10-ccr-2506-1/4.410#snap_exempt_resources: 19400
     us-co:regulations/10-ccr-2506-1/4.410#snap_countable_resources_after_exemptions: 5600

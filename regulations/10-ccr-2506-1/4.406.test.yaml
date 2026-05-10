@@ -39,6 +39,25 @@
     us-co:regulations/10-ccr-2506-1/4.406#snap_new_source_income_not_timely_available: holds
     us-co:regulations/10-ccr-2506-1/4.406#snap_destitute_due_to_new_source: holds
     us-co:regulations/10-ccr-2506-1/4.406#snap_destitute_income_household: holds
+- name: combined_terminated_and_new_sources_make_household_destitute
+  period: 2026-01
+  input:
+    us-co:regulations/10-ccr-2506-1/4.406#input.household_only_income_combines_terminated_source_before_application_and_new_source: true
+    us-co:regulations/10-ccr-2506-1/4.406#input.household_only_income_from_terminated_source_before_application: false
+    us-co:regulations/10-ccr-2506-1/4.406#input.income_source_normally_received_monthly_or_more_frequently: true
+    us-co:regulations/10-ccr-2506-1/4.406#input.income_expected_again_from_same_source_during_application_or_following_month: false
+    us-co:regulations/10-ccr-2506-1/4.406#input.household_only_income_from_new_source: false
+    us-co:regulations/10-ccr-2506-1/4.406#input.new_source_income_amount: 100
+    us-co:regulations/10-ccr-2506-1/4.406#input.new_source_income_normally_received_monthly_or_more_frequently: true
+    us-co:regulations/10-ccr-2506-1/4.406#input.income_received_from_new_source_within_30_days_before_filing: false
+    us-co:regulations/10-ccr-2506-1/4.406#input.new_source_income_received_by_tenth_calendar_day: false
+    us-co:regulations/10-ccr-2506-1/4.406#input.migrant_or_seasonal_farmworker_household: true
+    us-co:regulations/10-ccr-2506-1/4.406#input.first_month_of_certification_period: true
+  output:
+    us-co:regulations/10-ccr-2506-1/4.406#snap_income_source_terminated: holds
+    us-co:regulations/10-ccr-2506-1/4.406#snap_new_source_income_not_timely_available: holds
+    us-co:regulations/10-ccr-2506-1/4.406#snap_destitute_due_to_terminated_and_new_sources: holds
+    us-co:regulations/10-ccr-2506-1/4.406#snap_destitute_income_household: holds
 - name: new_source_at_or_below_threshold_does_not_make_household_destitute
   period: 2026-01
   input:
