@@ -43,6 +43,12 @@ jobs:
           repository: TheAxiomFoundation/rules-us
           path: _axiom/rules-us
 
+      - name: Checkout axiom-encode
+        uses: actions/checkout@v6.0.2
+        with:
+          repository: TheAxiomFoundation/axiom-encode
+          path: _axiom/axiom-encode
+
       - name: Install uv
         uses: astral-sh/setup-uv@v8.1.0
         with:
@@ -66,17 +72,19 @@ jobs:
       - name: Compare CO SNAP smoke sample to PolicyEngine
         run: |
           uv run \
+            --project _axiom/axiom-encode \
             --python 3.13 \
             --with policyengine-us \
-            --with pyyaml \
             --with numpy \
-            scripts/compare_snap_policyengine_ecps.py \
+            axiom-encode snap-ecps-compare \
+              --jurisdiction us-co \
+              --workspace-root "${{ github.workspace }}" \
               --utility-projection policyengine-type \
               --positive-snap-only \
               --sample-size 20 \
               --max-differences 20 \
-              --fail-on-mismatch \
-              --axiom-binary _axiom/axiom-rules/target/debug/axiom-rules
+              --tolerance 5 \
+              --fail-on-mismatch
 
   co-snap-full:
     name: CO SNAP PE full
@@ -98,6 +106,12 @@ jobs:
         with:
           repository: TheAxiomFoundation/rules-us
           path: _axiom/rules-us
+
+      - name: Checkout axiom-encode
+        uses: actions/checkout@v6.0.2
+        with:
+          repository: TheAxiomFoundation/axiom-encode
+          path: _axiom/axiom-encode
 
       - name: Install uv
         uses: astral-sh/setup-uv@v8.1.0
@@ -122,16 +136,18 @@ jobs:
       - name: Compare all CO SNAP eCPS records to PolicyEngine
         run: |
           uv run \
+            --project _axiom/axiom-encode \
             --python 3.13 \
             --with policyengine-us \
-            --with pyyaml \
             --with numpy \
-            scripts/compare_snap_policyengine_ecps.py \
+            axiom-encode snap-ecps-compare \
+              --jurisdiction us-co \
+              --workspace-root "${{ github.workspace }}" \
               --utility-projection policyengine-type \
               --max-differences 40 \
+              --tolerance 5 \
               --fail-on-mismatch \
-              --write-csv co-snap-policyengine-full.csv \
-              --axiom-binary _axiom/axiom-rules/target/debug/axiom-rules
+              --write-csv co-snap-policyengine-full.csv
 
       - name: Upload comparison CSV
         if: always()

@@ -15,12 +15,15 @@ Jurisdiction-specific materials belong in this repo. Shared federal materials be
 
 ## PolicyEngine eCPS SNAP Comparison
 
-Compare the Colorado SNAP composition against PolicyEngine enhanced CPS records:
+Compare the Colorado SNAP composition against PolicyEngine enhanced CPS records
+with the shared `axiom-encode` oracle command:
 
 ```bash
-uv run --with policyengine-us --with pyyaml \
-  scripts/compare_snap_policyengine_ecps.py \
-  --utility-projection policyengine-type
+uv run --project ../axiom-encode --with policyengine-us --with numpy \
+  axiom-encode snap-ecps-compare \
+  --jurisdiction us-co \
+  --utility-projection policyengine-type \
+  --tolerance 5
 ```
 
 The comparison uses PolicyEngine's `snap_normal_allotment`, not top-level `snap`,
@@ -45,4 +48,6 @@ values from the encoded rules.
 CI runs a 20-record positive-benefit smoke comparison on pushes and pull
 requests. The full Colorado eCPS comparison runs weekly and can be started
 manually from the `PolicyEngine Oracle` GitHub Actions workflow with
-`full_run` enabled.
+`full_run` enabled. CI uses a `$5` tolerance because current PolicyEngine data
+still returns Colorado HCUA as `$578`, while the encoded current source sets it
+at `$594`; the maximum benefit effect is about `$4.80`.
