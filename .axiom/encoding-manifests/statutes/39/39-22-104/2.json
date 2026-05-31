@@ -1,0 +1,41 @@
+{
+  "applied_files": [
+    {
+      "path": "statutes/39/39-22-104/2.yaml",
+      "sha256": "b96dde198ee886d3fd4a0d10e51732bba478702b22584dd3e6280154910e737c"
+    },
+    {
+      "path": "statutes/39/39-22-104/2.test.yaml",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    }
+  ],
+  "axiom_encode_git": {
+    "commit": "7e2b5c266e9b03adcb6d8217e1adcdbbbcfca9d1",
+    "dirty_tracked": false,
+    "root": "/Users/maxghenis/_axiom-worktrees/co-income-tax-20260531/axiom-encode",
+    "version": "0.2.485",
+    "version_commit": "7e2b5c266e9b03adcb6d8217e1adcdbbbcfca9d1"
+  },
+  "axiom_encode_version": "0.2.485",
+  "backend": "codex",
+  "citation": "us-co/statute/39/39-22-104/2",
+  "context_manifest_file": "/tmp/co-income-tax-encode-2-sliced-apply5/_eval_workspaces/codex-gpt-5.5/us-co-statute-39-39-22-104-2/workspace/context-manifest.json",
+  "context_manifest_sha256": "d5ef45fb10ede15cfacf688dff24f0d393b3f164aef39206f2d0ad533aba1e3d",
+  "generated_at": "2026-05-31T01:03:24.236984+00:00",
+  "generated_output_file": "/tmp/co-income-tax-encode-2-sliced-apply5/codex-gpt-5.5/statutes/39/39-22-104/2.yaml",
+  "generated_output_root": "/tmp/co-income-tax-encode-2-sliced-apply5",
+  "generated_output_sha256": "b96dde198ee886d3fd4a0d10e51732bba478702b22584dd3e6280154910e737c",
+  "generation_prompt_sha256": "72fe93714e34eba82c56a8f55391f5f1064ce32c09f4704cb27118c7b29957cb",
+  "model": "gpt-5.5",
+  "run_id": "dd8fc8d5",
+  "runner": "codex-gpt-5.5",
+  "schema_version": "axiom-encode/applied-rulespec/v1",
+  "signature": {
+    "algorithm": "hmac-sha256",
+    "key_id": "axiom-encode-apply-v1",
+    "value": "be9fd813d3ab8ea9bc3c4bae5e520365140ac52538a8aaa2bddabf3a9bc53531"
+  },
+  "tool": "axiom-encode encode --apply",
+  "trace_file": "/tmp/co-income-tax-encode-2-sliced-apply5/traces/codex-gpt-5.5/us-co-statute-39-39-22-104-2.json",
+  "trace_sha256": "72268ae27f9d8589e385288b3c8d2039a67b5d0b65ebec38d5ac7d79eef9146e"
+}
