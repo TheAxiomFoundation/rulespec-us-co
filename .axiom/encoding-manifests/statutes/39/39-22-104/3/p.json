@@ -2,40 +2,40 @@
   "applied_files": [
     {
       "path": "statutes/39/39-22-104/3/p.yaml",
-      "sha256": "ebef00b943343de8b2f3251fcd46fc58c14ffbf4200e66cf3178c4f2a8c008ad"
+      "sha256": "cb612e4b19cd1da1571969b64817022313ff9dedffd34e1fe249b7dd2ab33b43"
     },
     {
       "path": "statutes/39/39-22-104/3/p.test.yaml",
-      "sha256": "c7d15d9c19b64c4b1b033a7a176305910f5745bfafb363ed4eccb13cd65e5f17"
+      "sha256": "2a081f3f125b797fac15d046a902f60b5a68f4ab6705c61453bfe60121f35117"
     }
   ],
   "axiom_encode_git": {
-    "commit": "5c5a2234d42dded2edb122afc40a17e397836e23",
+    "commit": "eddd021513032d66d6350175ba3b990358cf52e1",
     "dirty_tracked": false,
-    "root": "/Users/maxghenis/_axiom-worktrees/colorado-income-tax-20260529/axiom-encode",
-    "version": "0.2.425",
-    "version_commit": "5c5a2234d42dded2edb122afc40a17e397836e23"
+    "root": "/Users/maxghenis/_axiom-worktrees/co-income-tax-next-20260531/axiom-encode-main-after-471-20260531",
+    "version": "0.2.498",
+    "version_commit": "eddd021513032d66d6350175ba3b990358cf52e1"
   },
-  "axiom_encode_version": "0.2.425",
-  "backend": "openai",
+  "axiom_encode_version": "0.2.498",
+  "backend": "codex",
   "citation": "us-co/statute/39/39-22-104/3/p",
-  "context_manifest_file": "/tmp/co-income-tax-net-3p-451-20260529/_eval_workspaces/openai-gpt-5.5/us-co-statute-39-39-22-104-3-p/workspace/context-manifest.json",
-  "context_manifest_sha256": "f4fede582dd4a9ab7bbda6591ac7918aee00532b88d87ab03f6df2ee640788f2",
-  "generated_at": "2026-05-29T21:15:54.321371+00:00",
-  "generated_output_file": "/tmp/co-income-tax-net-3p-451-20260529/openai-gpt-5.5/statutes/39/39-22-104/3/p.yaml",
-  "generated_output_root": "/tmp/co-income-tax-net-3p-451-20260529",
-  "generated_output_sha256": "7d0116e71b8baa97e425a5e2dc04633219e6dc301ce2d2e6ecdaffa74f386d55",
-  "generation_prompt_sha256": "b4dafd5a2c09f6ce257e3b1fafb601c0890b1200e723fed781c3b8166d510d08",
+  "context_manifest_file": "/tmp/axiom-encode-co-taxable-income-104-3-p-after-474-20260531/_eval_workspaces/codex-gpt-5.5/us-co-statute-39-39-22-104-3-p/workspace/context-manifest.json",
+  "context_manifest_sha256": "088908e71e65943be83dc42ea71063ea408d69e54a35cce0181e113f6779d0bd",
+  "generated_at": "2026-05-31T10:35:44.565228+00:00",
+  "generated_output_file": "/tmp/axiom-encode-co-taxable-income-104-3-p-after-474-20260531/codex-gpt-5.5/statutes/39/39-22-104/3/p.yaml",
+  "generated_output_root": "/tmp/axiom-encode-co-taxable-income-104-3-p-after-474-20260531",
+  "generated_output_sha256": "cb612e4b19cd1da1571969b64817022313ff9dedffd34e1fe249b7dd2ab33b43",
+  "generation_prompt_sha256": "2200734272b0cf56caf7a51ddb7dadf5feadb3cd53140907451c399c834b8933",
   "model": "gpt-5.5",
-  "run_id": "a079bf82",
-  "runner": "openai-gpt-5.5",
+  "run_id": "2b2df77e",
+  "runner": "codex-gpt-5.5",
   "schema_version": "axiom-encode/applied-rulespec/v1",
   "signature": {
     "algorithm": "hmac-sha256",
     "key_id": "axiom-encode-apply-v1",
-    "value": "22d93ad8e1fb4f8d55cb8543db895bb3c5a12095b2ae31508d87eb564a4377d3"
+    "value": "09dfb3239a4fe96897c623acb5d1a391e968eed93acb51012d6816af33e54ea6"
   },
   "tool": "axiom-encode encode --apply",
-  "trace_file": "/tmp/co-income-tax-net-3p-451-20260529/traces/openai-gpt-5.5/us-co-statute-39-39-22-104-3-p.json",
-  "trace_sha256": "200afed2f0d59bd15c5c4c796061601428a0f8e81d81064845449dce5eb81cb6"
+  "trace_file": "/tmp/axiom-encode-co-taxable-income-104-3-p-after-474-20260531/traces/codex-gpt-5.5/us-co-statute-39-39-22-104-3-p.json",
+  "trace_sha256": "17f0da797a0f95a3709c4ae9d23896d9ea927cdda1c341265c98b7d76c241284"
 }
