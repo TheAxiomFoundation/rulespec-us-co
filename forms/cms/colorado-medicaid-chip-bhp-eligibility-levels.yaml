@@ -1,0 +1,195 @@
+format: rulespec/v1
+module:
+  proof_validation:
+    required: true
+  source_verification:
+    corpus_citation_path: us/form/cms/medicaid-chip-bhp-eligibility-levels
+  summary: |-
+    "State Medicaid, CHIP and BHP Income Eligibility Standards (For selected MAGI Groups, based on state decisions as of December 1, 2023)".
+    Colorado row: "142% 142% 142% 260% 195% 260% 68% 133%".
+    "All income standards are expressed as a percentage of the federal poverty level (FPL)." "The MAGI-based rules generally include adjusting an individual’s income by an amount equivalent to a 5% FPL disregard."
+rules:
+  - name: magi_fpl_disregard_equivalent
+    kind: parameter
+    dtype: Rate
+    source: CMS Medicaid, CHIP and BHP Eligibility Levels, introductory note
+    metadata:
+      proof:
+        atoms:
+          - path: versions[0].formula
+            kind: parameter
+            source:
+              corpus_citation_path: us/form/cms/medicaid-chip-bhp-eligibility-levels
+              excerpt: "The MAGI-based rules generally include adjusting an individual’s income by an amount equivalent to a 5% FPL disregard."
+    versions:
+      - effective_from: '2023-12-01'
+        formula: |-
+          0.05
+
+  - name: children_medicaid_ages_0_to_1_income_standard
+    kind: parameter
+    dtype: Rate
+    source: CMS Medicaid, CHIP and BHP Eligibility Levels, Colorado table row
+    metadata:
+      proof:
+        atoms:
+          - path: versions[0].formula
+            kind: table_cell
+            source:
+              corpus_citation_path: us/form/cms/medicaid-chip-bhp-eligibility-levels
+              excerpt: "Colorado 142% 142% 142% 260% 195% 260% 68% 133%"
+              table:
+                header: "State Medicaid, CHIP and BHP Income Eligibility Standards"
+                row: "Colorado"
+                column: "Children Medicaid Ages 0-1"
+    versions:
+      - effective_from: '2023-12-01'
+        formula: |-
+          1.42
+
+  - name: children_medicaid_ages_1_to_5_income_standard
+    kind: parameter
+    dtype: Rate
+    source: CMS Medicaid, CHIP and BHP Eligibility Levels, Colorado table row
+    metadata:
+      proof:
+        atoms:
+          - path: versions[0].formula
+            kind: table_cell
+            source:
+              corpus_citation_path: us/form/cms/medicaid-chip-bhp-eligibility-levels
+              excerpt: "Colorado 142% 142% 142% 260% 195% 260% 68% 133%"
+              table:
+                header: "State Medicaid, CHIP and BHP Income Eligibility Standards"
+                row: "Colorado"
+                column: "Children Medicaid Ages 1-5"
+    versions:
+      - effective_from: '2023-12-01'
+        formula: |-
+          1.42
+
+  - name: children_medicaid_ages_6_to_18_income_standard
+    kind: parameter
+    dtype: Rate
+    source: CMS Medicaid, CHIP and BHP Eligibility Levels, Colorado table row
+    metadata:
+      proof:
+        atoms:
+          - path: versions[0].formula
+            kind: table_cell
+            source:
+              corpus_citation_path: us/form/cms/medicaid-chip-bhp-eligibility-levels
+              excerpt: "Colorado 142% 142% 142% 260% 195% 260% 68% 133%"
+              table:
+                header: "State Medicaid, CHIP and BHP Income Eligibility Standards"
+                row: "Colorado"
+                column: "Children Medicaid Ages 6-18"
+    versions:
+      - effective_from: '2023-12-01'
+        formula: |-
+          1.42
+
+  - name: children_separate_chip_income_standard
+    kind: parameter
+    dtype: Rate
+    source: CMS Medicaid, CHIP and BHP Eligibility Levels, Colorado table row
+    metadata:
+      proof:
+        atoms:
+          - path: versions[0].formula
+            kind: table_cell
+            source:
+              corpus_citation_path: us/form/cms/medicaid-chip-bhp-eligibility-levels
+              excerpt: "Colorado 142% 142% 142% 260% 195% 260% 68% 133%"
+              table:
+                header: "State Medicaid, CHIP and BHP Income Eligibility Standards"
+                row: "Colorado"
+                column: "Children Separate CHIP"
+    versions:
+      - effective_from: '2023-12-01'
+        formula: |-
+          2.60
+
+  - name: pregnant_women_medicaid_income_standard
+    kind: parameter
+    dtype: Rate
+    source: CMS Medicaid, CHIP and BHP Eligibility Levels, Colorado table row
+    metadata:
+      proof:
+        atoms:
+          - path: versions[0].formula
+            kind: table_cell
+            source:
+              corpus_citation_path: us/form/cms/medicaid-chip-bhp-eligibility-levels
+              excerpt: "Colorado 142% 142% 142% 260% 195% 260% 68% 133%"
+              table:
+                header: "State Medicaid, CHIP and BHP Income Eligibility Standards"
+                row: "Colorado"
+                column: "Pregnant Women Medicaid"
+    versions:
+      - effective_from: '2023-12-01'
+        formula: |-
+          1.95
+
+  - name: pregnant_women_chip_income_standard
+    kind: parameter
+    dtype: Rate
+    source: CMS Medicaid, CHIP and BHP Eligibility Levels, Colorado table row
+    metadata:
+      proof:
+        atoms:
+          - path: versions[0].formula
+            kind: table_cell
+            source:
+              corpus_citation_path: us/form/cms/medicaid-chip-bhp-eligibility-levels
+              excerpt: "Colorado 142% 142% 142% 260% 195% 260% 68% 133%"
+              table:
+                header: "State Medicaid, CHIP and BHP Income Eligibility Standards"
+                row: "Colorado"
+                column: "Pregnant Women CHIP"
+    versions:
+      - effective_from: '2023-12-01'
+        formula: |-
+          2.60
+
+  - name: parent_caretaker_medicaid_income_standard
+    kind: parameter
+    dtype: Rate
+    source: CMS Medicaid, CHIP and BHP Eligibility Levels, Colorado table row
+    metadata:
+      proof:
+        atoms:
+          - path: versions[0].formula
+            kind: table_cell
+            source:
+              corpus_citation_path: us/form/cms/medicaid-chip-bhp-eligibility-levels
+              excerpt: "Colorado 142% 142% 142% 260% 195% 260% 68% 133%"
+              table:
+                header: "State Medicaid, CHIP and BHP Income Eligibility Standards"
+                row: "Colorado"
+                column: "Adults (Medicaid) Parent/Caretaker"
+    versions:
+      - effective_from: '2023-12-01'
+        formula: |-
+          0.68
+
+  - name: adult_expansion_medicaid_income_standard
+    kind: parameter
+    dtype: Rate
+    source: CMS Medicaid, CHIP and BHP Eligibility Levels, Colorado table row
+    metadata:
+      proof:
+        atoms:
+          - path: versions[0].formula
+            kind: table_cell
+            source:
+              corpus_citation_path: us/form/cms/medicaid-chip-bhp-eligibility-levels
+              excerpt: "Colorado 142% 142% 142% 260% 195% 260% 68% 133%"
+              table:
+                header: "State Medicaid, CHIP and BHP Income Eligibility Standards"
+                row: "Colorado"
+                column: "Adults (Medicaid) Expansion to Adults"
+    versions:
+      - effective_from: '2023-12-01'
+        formula: |-
+          1.33
