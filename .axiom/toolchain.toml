@@ -1,4 +1,5 @@
 [toolchain]
+axiom_encode_version = "0.2.560"
 axiom_encode_ref = "001b45dddaaef7dbe2df11d1ed53f036ce9f1ae6"
 axiom_rules_engine_ref = "431039f02d3fff60cd0c3c074f0ab4318042f002"
 axiom_corpus_ref = "8caf4e6f0024b132200ca4515c2bf10933532684"
