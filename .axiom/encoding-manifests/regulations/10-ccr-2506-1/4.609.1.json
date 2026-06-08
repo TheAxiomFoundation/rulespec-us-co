@@ -6,7 +6,7 @@
     },
     {
       "path": "regulations/10-ccr-2506-1/4.609.1.test.yaml",
-      "sha256": "4e3e6cc5f28f27293b514e8204cc2835eda073635060ff1bef7c20c5cfa95a28"
+      "sha256": "a09dccffcdb1f5ddd329e52759317c7a82bb3f17e14144dd72672805cf203887"
     }
   ],
   "axiom_encode_git": {
@@ -33,7 +33,7 @@
   "signature": {
     "algorithm": "hmac-sha256",
     "key_id": "axiom-encode-apply-v1",
-    "value": "e5173691c73e7e57f4ba0104a371ed0bc0b2802c50bbadb0f18ba6384b625ea5"
+    "value": "a76262c95a15910e7db74acc5cf0a4dc15f978cf46c1d9c8ad11b544562dd203"
   },
   "tool": "axiom-encode encode --apply",
   "trace_file": "/tmp/axiom-encode-encodings/traces/codex-gpt-5.5/us-co-regulation-10-ccr-2506-1-4.609.1.json",
