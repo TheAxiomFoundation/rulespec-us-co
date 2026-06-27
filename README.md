@@ -1,5 +1,9 @@
 # rulespec-us-co
 
+This repository is archived. Its canonical content now lives in
+[`TheAxiomFoundation/rulespec-us`](https://github.com/TheAxiomFoundation/rulespec-us)
+under `us-co/`; keep all future RuleSpec work there.
+
 Colorado RuleSpec encodings.
 
 ## Contents
@@ -11,7 +15,7 @@ Colorado RuleSpec encodings.
 
 Use RuleSpec YAML under `statutes/`, `regulations/`, or `policies/` for encoded rules. Do not add source text, source registry sidecars, generated source payloads, extracted document snapshots, or wave manifests to Git; source material belongs in the corpus database/object storage.
 
-Jurisdiction-specific materials belong in this repo. Shared federal materials belong in `rulespec-us`.
+In the canonical monorepo, Colorado-administered materials live under `us-co/`; shared federal materials live at the country root.
 
 ## PolicyEngine ECPS SNAP Comparison
 
